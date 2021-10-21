@@ -56,7 +56,7 @@ def average_slope_intercept(img, lines):
     return np.array([left_line, right_line])
 
 
-image = cv2.imread("6.jpg")
+image = cv2.imread("image.jpg")
 lane_image = np.copy(image)
 canny_image = canny(lane_image)
 cropped_image = region_of_interest(canny_image)
